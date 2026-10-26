@@ -1,0 +1,335 @@
+
+    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow / Intelligence — Analytics, BI & Automation Consulting | WIZENTO</title>
+    <meta name="description" content="Consolidating operational data into executive dashboards with Wizento." />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Grow / Intelligence — Analytics, BI & Automation Consulting | WIZENTO" />
+    <meta property="og:description" content="Consolidating operational data into executive dashboards with Wizento." />
+    <meta property="og:url" content="https://wizentoinfosec.com/grow-intelligence" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Clean Self-Contained Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  
+    
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+          <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.45));">
+    <rect width="48" height="48" rx="10" fill="#081426" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1.5"/>
+    <path d="M12 16L24 34L36 16" stroke="url(#logoGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18 16L24 26L30 16" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="34" r="2.5" fill="#22D3EE"/>
+    <defs>
+      <linearGradient id="logoGrad" x1="12" y1="16" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#22D3EE"/>
+        <stop offset="0.5" stop-color="#2563EB"/>
+        <stop offset="1" stop-color="#10B981"/>
+      </linearGradient>
+    </defs>
+  </svg>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; color: var(--color-white); line-height: 1;">
+              WIZENTO
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.625rem; font-weight: 600; letter-spacing: 0.12em; color: var(--color-cyan); text-transform: uppercase; margin-top: 2px;">
+              Security &bull; Technology &bull; Growth
+            </div>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link ">Home</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="technology.html" class="nav-link ">Tech Radar</a>
+          <a href="industries.html" class="nav-link ">Industries</a>
+          <a href="about.html" class="nav-link ">About</a>
+          <a href="insights.html" class="nav-link ">Insights</a>
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" onclick="openConsultationModal('integrated')" class="btn btn-primary btn-sm radiant-glow">
+            <span>Request a Consultation</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="btn-hamburger" aria-label="Open Navigation Menu" style="display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 0.5rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <span style="font-weight: 700; color: white; font-size: 1.25rem;">Navigation</span>
+        <button id="mobile-drawer-close" style="background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer;">&times;</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Home</a>
+        <a href="services.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Services Overview</a>
+        <a href="secure-assure.html" style="color: var(--color-cyan); text-decoration: none; padding-left: 1rem; font-size: 0.95rem;">&bull; Secure / Assure</a>
+        <a href="build-technology.html" style="color: var(--pillar-build); text-decoration: none; padding-left: 1rem; font-size: 0.95rem;">&bull; Build / Technology</a>
+        <a href="grow-intelligence.html" style="color: var(--pillar-grow); text-decoration: none; padding-left: 1rem; font-size: 0.95rem;">&bull; Grow / Intelligence</a>
+        <a href="technology.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Technology Radar</a>
+        <a href="industries.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Industries</a>
+        <a href="about.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">About Wizento</a>
+        <a href="insights.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Insights</a>
+        <a href="contact.html" style="color: white; text-decoration: none; font-size: 1.15rem; font-weight: 600;">Contact</a>
+      </div>
+    </div>
+  
+
+    <main>
+      <section class="section section-dark" style="padding-top: calc(var(--header-height) + 3.5rem); padding-bottom: 4.5rem; background: linear-gradient(180deg, #081426 0%, #0C1E3C 100%); border-bottom: 1px solid rgba(16, 185, 129, 0.25);">
+        <div class="container">
+          <div class="section-header left-aligned">
+            <div class="section-eyebrow">Pillar 03 &bull; Operational Analytics &amp; Workflow Automation</div>
+            <h1 style="color: white; margin-bottom: 1.25rem; font-size: clamp(2rem, 4vw, 3.25rem);">Grow / Intelligence</h1>
+            <p class="section-subtitle" style="max-width: 820px;">
+              Connecting disconnected operational tools, unifying executive reporting cockpits, and establishing governed automated workflows to eliminate manual reporting drag.
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+              <button type="button" onclick="openConsultationModal('grow')" class="btn btn-primary btn-lg radiant-glow">
+                <span>Design Your Executive Reporting Cockpit</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+              <a href="services.html" class="btn btn-secondary btn-lg">
+                <span>View All Consulting Pillars</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" style="background: #081426; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+        <div class="container">
+          
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1.25rem;">
+      <button type="button" class="section-share-btn" data-share-section="intelligence-deliverables" data-share-title="Executive Analytics Deliverables" title="Copy direct link to this section">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+        <span>Share Section</span>
+      </button>
+    </div>
+  
+          <div class="section-header">
+            <div class="section-eyebrow">Data Governance Outputs</div>
+            <h2 class="section-title">What You Receive from an Intelligence Mandate</h2>
+            <p class="section-subtitle">Single source of truth analytics built on Snowflake, BigQuery, and Power BI with row-level security.</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 2rem;">
+              <span class="mono-tag" style="color: var(--pillar-grow); margin-bottom: 0.5rem; display: block;">Asset 01</span>
+              <h3 style="color: white; font-size: 1.25rem; margin-bottom: 0.75rem;">Executive KPI Cockpit</h3>
+              <p style="color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">Self-service executive scorecards in Power BI or Tableau with automated scheduled refreshes and Row-Level Security (RLS).</p>
+            </div>
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 2rem;">
+              <span class="mono-tag" style="color: var(--pillar-grow); margin-bottom: 0.5rem; display: block;">Asset 02</span>
+              <h3 style="color: white; font-size: 1.25rem; margin-bottom: 0.75rem;">Universal Data Dictionary</h3>
+              <p style="color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">Unified semantic business logic defining exact formulas for CAC, LTV, Gross Margin, and Net Retention across departments.</p>
+            </div>
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 2rem;">
+              <span class="mono-tag" style="color: var(--pillar-grow); margin-bottom: 0.5rem; display: block;">Asset 03</span>
+              <h3 style="color: white; font-size: 1.25rem; margin-bottom: 0.75rem;">Automated ETL Pipelines</h3>
+              <p style="color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">Fault-tolerant data ingestion connecting ERP, CRM, and cloud billing systems without manual CSV export manipulation.</p>
+            </div>
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 2rem;">
+              <span class="mono-tag" style="color: var(--pillar-grow); margin-bottom: 0.5rem; display: block;">Asset 04</span>
+              <h3 style="color: white; font-size: 1.25rem; margin-bottom: 0.75rem;">Safe AI Adoption Framework</h3>
+              <p style="color: #94A3B8; font-size: 0.875rem; line-height: 1.6;">Enterprise data leakage guardrails ensuring employees leverage LLM productivity tools without exfiltrating confidential IP.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.45));">
+    <rect width="48" height="48" rx="10" fill="#081426" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1.5"/>
+    <path d="M12 16L24 34L36 16" stroke="url(#logoGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18 16L24 26L30 16" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="34" r="2.5" fill="#22D3EE"/>
+    <defs>
+      <linearGradient id="logoGrad" x1="12" y1="16" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#22D3EE"/>
+        <stop offset="0.5" stop-color="#2563EB"/>
+        <stop offset="1" stop-color="#10B981"/>
+      </linearGradient>
+    </defs>
+  </svg>
+              <div>
+                <div style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: white;">WIZENTO</div>
+                <div style="font-family: var(--font-mono); font-size: 0.625rem; color: var(--color-cyan); letter-spacing: 0.12em; text-transform: uppercase;">Security &bull; Technology &bull; Growth</div>
+              </div>
+            </div>
+            <p class="footer-desc" style="margin-top: 1rem;">
+              One integrated consulting partner connecting enterprise cybersecurity, modern IT infrastructure, and business intelligence to help organizations build resilient, growth-ready capabilities.
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; color: var(--color-slate-light); font-size: 0.8125rem;">
+              <span>🔒 Zero-Commission Fiduciary Charter</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Consulting Pillars</h4>
+            <ul class="footer-links">
+              <li><a href="services.html" class="footer-link">Services Architecture</a></li>
+              <li><a href="secure-assure.html" class="footer-link" style="color: var(--pillar-secure);">Secure / Assure</a></li>
+              <li><a href="build-technology.html" class="footer-link" style="color: var(--pillar-build);">Build / Technology</a></li>
+              <li><a href="grow-intelligence.html" class="footer-link" style="color: var(--pillar-grow);">Grow / Intelligence</a></li>
+              <li><a href="technology.html" class="footer-link" style="color: var(--color-cyan);">Tech Compatibility Radar</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Practice &amp; Sectors</h4>
+            <ul class="footer-links">
+              <li><a href="industries.html" class="footer-link">Sectors &amp; Client Profiles</a></li>
+              <li><a href="about.html" class="footer-link">About Wizento &amp; Partners</a></li>
+              <li><a href="insights.html" class="footer-link">Practical Advisory Guides</a></li>
+              <li><a href="contact.html#procurement-faq" class="footer-link">Procurement &amp; Legal FAQ</a></li>
+              <li><a href="contact.html" class="footer-link">Advisory Intake &amp; Inquiries</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Direct Inquiries</h4>
+            <ul class="footer-links">
+              <li>
+                <span style="font-size: 0.8125rem; color: var(--color-slate-light); display: block;">Primary Advisory Inbox:</span>
+                <a href="mailto:advisory@wizento.com" class="footer-link" style="color: var(--color-cyan); font-weight: 500;">
+                  advisory@wizento.com
+                </a>
+              </li>
+              <li style="margin-top: 0.5rem;">
+                <span style="font-size: 0.8125rem; color: var(--color-slate-light); display: block;">Direct WhatsApp Desk:</span>
+                <a href="https://wa.me/919876543210" target="_blank" class="footer-link" style="color: #25D366; font-weight: 500;">
+                  +91 98765 43210
+                </a>
+              </li>
+              <li style="margin-top: 0.5rem;">
+                <span style="font-size: 0.8125rem; color: var(--color-slate-light); display: block;">Global Operations:</span>
+                <span style="font-size: 0.8125rem; color: var(--color-slate);">India &bull; Singapore &bull; Global Remote Delivery</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 WIZENTO. All rights reserved. Zero vendor kickbacks.</div>
+          <div class="footer-legal-links">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Engagement</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Global Floating Action Widgets -->
+    <button type="button" id="scroll-to-top" class="scroll-to-top-btn" title="Scroll to top" aria-label="Scroll to top" style="position: fixed; bottom: 84px; right: 24px; width: 44px; height: 44px; border-radius: 50%; background: #0A1B36; border: 1px solid rgba(34,211,238,0.3); color: #22D3EE; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 99; opacity: 0; visibility: hidden; transition: all 0.25s ease;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div style="position: fixed; bottom: 24px; right: 24px; z-index: 100;">
+      <div id="whatsapp-popup" style="display: none; position: absolute; bottom: 64px; right: 0; width: 310px; background: #091527; border: 1px solid rgba(37,211,102,0.35); border-radius: 12px; padding: 1.25rem; box-shadow: 0 15px 35px rgba(0,0,0,0.6); animation: fadeIn 0.2s ease-out;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: #25D366;"></div>
+            <strong style="color: white; font-size: 0.9375rem;">Partner Advisory Desk</strong>
+          </div>
+          <button id="whatsapp-popup-close" style="background: none; border: none; color: #94A3B8; font-size: 1.25rem; cursor: pointer;">&times;</button>
+        </div>
+        <p style="color: #CBD5E1; font-size: 0.8125rem; line-height: 1.5; margin-bottom: 1rem;">
+          Connect directly with a Wizento consulting partner on WhatsApp for quick scoping questions or confidential discussions.
+        </p>
+        <a href="https://wa.me/919876543210?text=Hello%20Wizento%20team%2C%20I%20would%20like%20to%20enquire%20about%20your%20consulting%20advisory%20services." target="_blank" class="btn btn-primary btn-sm" style="background: #25D366; border-color: #25D366; color: black; font-weight: 600; width: 100%; justify-content: center; text-decoration: none;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+
+      <button id="whatsapp-toggle-btn" style="width: 52px; height: 52px; border-radius: 50%; background: #25D366; border: none; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 24px rgba(37,211,102,0.4); transition: transform 0.2s ease;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+      </button>
+    </div>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" class="modal-overlay" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); z-index: 10000; align-items: center; justify-content: center; padding: 1.25rem;">
+      <div class="modal-card" style="background: #091527; border: 1px solid rgba(34,211,238,0.3); border-radius: 16px; max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 2rem; box-shadow: 0 25px 50px rgba(0,0,0,0.8);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1rem;">
+          <div>
+            <div style="font-size: 0.75rem; color: var(--color-cyan); font-family: var(--font-mono); font-weight: 700; text-transform: uppercase;">Preliminary Discovery</div>
+            <h3 style="color: white; font-size: 1.5rem; margin: 0.25rem 0 0;">Request a Partner Consultation</h3>
+          </div>
+          <button class="modal-close-btn" style="background: none; border: none; color: white; font-size: 1.75rem; cursor: pointer;">&times;</button>
+        </div>
+
+        <form>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.8125rem; color: #94A3B8; margin-bottom: 0.35rem;">Full Name *</label>
+              <input type="text" name="fullName" required placeholder="e.g. David Henderson" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.15); color: white; outline: none;" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.8125rem; color: #94A3B8; margin-bottom: 0.35rem;">Work Email *</label>
+              <input type="email" name="workEmail" required placeholder="david@company.com" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.15); color: white; outline: none;" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.8125rem; color: #94A3B8; margin-bottom: 0.35rem;">Organization *</label>
+              <input type="text" name="organization" required placeholder="Company / Institution" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.15); color: white; outline: none;" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.8125rem; color: #94A3B8; margin-bottom: 0.35rem;">Advisory Area *</label>
+              <select name="areaOfInterest" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.15); color: white; outline: none;">
+                <option value="integrated">Multi-Pillar Integrated Advisory</option>
+                <option value="secure">Secure / Assure (ISO 27001, SOC 2, GRC)</option>
+                <option value="build">Build / Technology (Cloud, Infrastructure)</option>
+                <option value="grow">Grow / Intelligence (Analytics, Executive BI)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; font-size: 0.8125rem; color: #94A3B8; margin-bottom: 0.35rem;">Project Context or Technical Challenge *</label>
+            <textarea name="projectScope" rows="4" required placeholder="Briefly describe your upcoming compliance audit, infrastructure milestone, or business intelligence need..." style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.15); color: white; outline: none;"></textarea>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+            <button type="button" onclick="closeConsultationModal()" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary radiant-glow">
+              <span>Submit Consultation Request</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <script src="js/main.js"></script>
+  </body>
+</html>
+  
