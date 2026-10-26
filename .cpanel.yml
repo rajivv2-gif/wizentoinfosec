@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rajivver/public_html/
+    - /bin/cp -rf * /home/rajivver/wizentoinfosec.com/
+    - /bin/cp -f .htaccess /home/rajivver/wizentoinfosec.com/
     - /bin/cp -rf * /home/rajivver/public_html/
     - /bin/cp -f .htaccess /home/rajivver/public_html/
